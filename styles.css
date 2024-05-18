@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(136.16deg, rgba(46, 9, 22, 0.97) 12.91%, rgba(32, 10, 43, 0.69) 87.68%);
+    width: 100%;
+    min-height: 142vh;
+    padding: 5px 80px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    padding: 10px 0 0 70px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    position: relative;
+    color: rgba(255, 91, 121, 1);
+}
+
+.underline:after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 0px;
+    position: absolute;
+    background-color: rgba(201, 30, 129, 0.87);
+    transition: 0.3s ease;
+}
+
+.underline:hover:after {
+    width: 100%;
+}
+
+.btn-link {
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 41px;
+}
+
+.btn-link:hover {
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-left {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    padding-top: 10px;
+    right: 40px;
+}
+
+.container-left img {
+    position: relative;
+    display: flex;
+    width: 780px;
+    top: -129px;
+    min-height: 110vh;
+}
+
+.container-left-info {
+    position: absolute;
+    bottom: -110px;
+    left: 160px;
+
+    padding-right: 20px;
+    border-right: 1px solid rgba(255, 91, 121, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 85px;
+}
+
+.container-left-info:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 91, 121, 1);
+    position: absolute;
+    right: -6px;
+    top: -8px;
+}
+
+.container-left-info p:first-child {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.container-left-info p:last-child {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.container-right {
+    position: relative;
+    margin-top: 70px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 91, 121, 1);
+}
+
+.container-right-info p:first-child {
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 64px;
+    color: #ffffff;
+    padding: 10px 0px 15px;
+}
+
+.container-right-info p:last-child {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.container-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container-actions button:hover {
+    opacity: 0.8;
+}
+
+.container-actions a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container-actions a:hover {
+    opacity: 0.8;
+}
+
+.btn-ghost {
+    position: relative;
+    top: -5px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #ffffff;
+    display: block;
+    margin: 10px 0 0 530px;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-ghost img {
+    position: relative;
+    right: 140px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.btn-ghost:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 160vw;
+        height: 220vh;
+        background-color: rgba(46, 9, 22, 0.97);      
+    }
+
+    header{
+        gap: 80px;
+        margin-top: 50px;
+    }
+
+    section {
+        position: relative;
+    }
+
+    .container-left img {
+        min-width: 250vw;
+        left: 100px;
+        top: -380px;
+    }
+
+    .container-left-info{
+        display: none;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .container-right {
+        padding-left: 20px;
+        padding-top: 700px;
+    }
+
+    .container-actions{
+        gap: 42px;
+    }
+
+    .btn-ghost{
+        display: none;
+    }
+}
